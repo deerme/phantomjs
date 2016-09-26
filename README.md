@@ -6,7 +6,7 @@ This version of phantomjs contain the rule "X-Frame-Options" disabled in the sou
 
 To check the differences, let's try running a script that captures the screen of a page containing an iframe to google.com (domain having an x-frame-options denying iframe rendering).
 
-        ```        
+                
         cd test/x-frame-options/
         phantomjs screenshot.js test-iframe.html phantomjs-without-mod.png
         ../../bin/phantomjs  screenshot.js test-iframe.html phantomjs-with-mod.png
@@ -26,7 +26,7 @@ The change was in the file ./Source/WebCore/loader/FrameLoader.cpp, specific, in
 
 ## How to build
 
-        ```        
+                
         python build.py
         end
 
