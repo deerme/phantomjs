@@ -1,0 +1,15 @@
+prefix=/home/deerme/Projects/phantomjs/src/qt/qtbase
+exec_prefix=${prefix}
+libdir=${prefix}/lib
+includedir=${prefix}/include
+
+host_bins=${prefix}/bin
+qt_config=minimal-config small-config medium-config large-config full-config fontconfig xlib xrender c++11 accessibility static qpa reduce_exports reduce_relocations clock-gettime clock-monotonic posix_fallocate mremap getaddrinfo ipv6ifname getifaddrs inotify eventfd jpeg png gif system-freetype harfbuzz zlib nis iconv openssl-linked xinput2 rpath gstreamer-1.0 icu concurrent release
+
+Name: Qt5 Core
+Description: Qt Core module
+Version: 5.5.1
+Libs: -L${libdir} -lQt5Core 
+Libs.private: -lpthread -licui18n -licuuc -licudata -L/home/deerme/Projects/phantomjs/src/qt/qtbase/lib -lqtpcre -lm -ldl -lrt  
+Cflags: -I${includedir}/QtCore -I${includedir}
+

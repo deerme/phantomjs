@@ -1,0 +1,14 @@
+prefix=/home/deerme/Projects/phantomjs/src/qt/qtbase
+exec_prefix=${prefix}
+libdir=${prefix}/lib
+includedir=${prefix}/include
+
+
+Name: Qt5 WebKit
+Description: Qt WebKit module
+Version: 5.5.1
+Libs: -L${libdir} -lQt5WebKit 
+Libs.private: -L/home/deerme/Projects/phantomjs/src/qt/qtbase/lib -lQt5Gui -L/home/deerme/Projects/phantomjs/src/qt/qtbase/lib -lQt5Core -licui18n -licuuc -licudata -lqtpcre -lm -ldl -lrt -lpthread -lqtharfbuzzng -lQt5Network -L/home/deerme/Projects/phantomjs/src/qt/qtbase/lib -lQt5Core -licui18n -licuuc -licudata -lqtpcre -lm -ldl -lrt -lpthread -lssl -lcrypto -lQt5Core -lpthread -licui18n -licuuc -licudata -L/home/deerme/Projects/phantomjs/src/qt/qtbase/lib -lqtpcre -lm -ldl -lrt -lpthread -Wl,-whole-archive -lWebKit1 -Wl,-no-whole-archive -L/home/deerme/Projects/phantomjs/src/qt/qtwebkit/Source/WebKit/ -Wl,-whole-archive -lWebCore -Wl,-no-whole-archive -L/home/deerme/Projects/phantomjs/src/qt/qtwebkit/Source/WebCore/ -lz -Wl,-whole-archive -lleveldb -Wl,-no-whole-archive -L/home/deerme/Projects/phantomjs/src/qt/qtwebkit/Source/ThirdParty/leveldb/ -Wl,-whole-archive -lJavaScriptCore -Wl,-no-whole-archive -L/home/deerme/Projects/phantomjs/src/qt/qtwebkit/Source/JavaScriptCore/ -Wl,-whole-archive -lWTF -Wl,-no-whole-archive -L/home/deerme/Projects/phantomjs/src/qt/qtwebkit/Source/WTF/ -lxslt -lxml2 -lxml2 -lsqlite3 -licui18n -licuuc -licudata -lQt5Sql -L/home/deerme/Projects/phantomjs/src/qt/qtbase/lib -lQt5Core -licui18n -licuuc -licudata -lqtpcre -lm -ldl -lrt -lpthread -lQt5Gui -L/home/deerme/Projects/phantomjs/src/qt/qtbase/lib -lQt5Core -licui18n -licuuc -licudata -lqtpcre -lm -ldl -lrt -lpthread -lqtharfbuzzng -lQt5Network -L/home/deerme/Projects/phantomjs/src/qt/qtbase/lib -lQt5Core -licui18n -licuuc -licudata -lqtpcre -lm -ldl -lrt -lpthread -lssl -lcrypto -lQt5Core -lpthread -licui18n -licuuc -licudata -L/home/deerme/Projects/phantomjs/src/qt/qtbase/lib -lqtpcre -lm -ldl -lrt  
+Cflags: -I${includedir}/QtWebKit -I${includedir}
+Requires: Qt5Core Qt5Gui Qt5Network
+

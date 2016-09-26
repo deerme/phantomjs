@@ -1,0 +1,101 @@
+
+   Configure summary
+
+Build type:    linux-g++ (x86_64, CPU features: mmx sse sse2)
+Platform notes:
+
+            - Also available for Linux: linux-clang linux-kcc linux-icc linux-cxx
+        
+Build options:
+  Configuration .......... accessibility avx avx2 c++11 clock-gettime clock-monotonic compile_examples concurrent enable_new_dtags eventfd fontconfig full-config getaddrinfo getifaddrs gif gstreamer-1.0 harfbuzz iconv icu inotify ipv6ifname jpeg large-config largefile medium-config minimal-config mremap nis openssl-linked pcre png posix_fallocate precompile_header qpa qpa reduce_exports reduce_relocations release rpath small-config sse2 sse3 sse4_1 sse4_2 ssse3 static system-freetype use_gold_linker xinput2 xlib xrender zlib 
+  Build parts ............ libs
+  Mode ................... release
+  Using sanitizer(s)...... none
+  Using C++11 ............ yes
+  Using gold linker....... yes
+  Using new DTAGS ........ yes
+  Using PCH .............. yes
+  Target compiler supports:
+    SSE2/SSE3/SSSE3 ...... yes/yes/yes
+    SSE4.1/SSE4.2 ........ yes/yes
+    AVX/AVX2 ............. yes/yes
+
+Qt modules and options:
+  Qt D-Bus ............... no
+  Qt Concurrent .......... yes
+  Qt GUI ................. yes
+  Qt Widgets ............. yes
+  Large File ............. yes
+  QML debugging .......... no
+  Use system proxies ..... no
+
+Support enabled for:
+  Accessibility .......... yes
+  ALSA ................... no
+  CUPS ................... no
+  Evdev .................. no
+  FontConfig ............. yes
+  FreeType ............... yes (system library)
+  Glib ................... no
+  GStreamer .............. yes (1.0)
+  GTK theme .............. no
+  HarfBuzz ............... yes (bundled copy)
+  Iconv .................. yes
+  ICU .................... yes
+  Image formats: 
+    GIF .................. yes (in QtGui, using bundled copy)
+    JPEG ................. yes (in QtGui, using bundled copy)
+    PNG .................. yes (in QtGui, using bundled copy)
+  journald ............... no
+  libinput................ no
+  mtdev .................. no
+  Networking: 
+    getaddrinfo .......... yes
+    getifaddrs ........... yes
+    IPv6 ifname .......... yes
+    libproxy.............. no
+    OpenSSL .............. yes (linked to the libraries)
+  NIS .................... yes
+  OpenGL / OpenVG: 
+    EGL .................. no
+    OpenGL ............... no
+    OpenVG ............... no
+  PCRE ................... yes (bundled copy)
+  pkg-config ............. yes 
+  PulseAudio ............. no
+  QPA backends: 
+    DirectFB ............. no
+    EGLFS ................ no
+      EGLFS i.MX6....... . no
+      EGLFS KMS .......... no
+      EGLFS Mali ......... no
+      EGLFS Raspberry Pi . no
+      EGLFS X11 .......... no
+    LinuxFB .............. no
+    XCB .................. no
+  Session management ..... no
+  SQL drivers: 
+    DB2 .................. no
+    InterBase ............ no
+    MySQL ................ yes (plugin)
+    OCI .................. no
+    ODBC ................. no
+    PostgreSQL ........... no
+    SQLite 2 ............. no
+    SQLite ............... yes (plugin, using bundled copy)
+    TDS .................. no
+  tslib .................. no
+  udev ................... no
+  xkbcommon-x11........... no
+  xkbcommon-evdev......... no
+  zlib ................... yes (bundled copy)
+
+
+WARNING: Using static linking will disable the use of dynamically
+loaded plugins. Make sure to import all needed static plugins,
+or compile needed modules into the library.
+
+NOTE: When linking against OpenSSL, you can override the default
+library names through OPENSSL_LIBS.
+For example:
+    OPENSSL_LIBS='-L/opt/ssl/lib -lssl -lcrypto' ./configure -openssl-linked
