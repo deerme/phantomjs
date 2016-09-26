@@ -24,4 +24,11 @@ Result with phantomjs mod
 
 The change was in the file ./Source/WebCore/loader/FrameLoader.cpp, specific, in the method FrameLoader::shouldInterruptLoadForXFrameOptions, which now always returns false, therefore, ignores the rules of x-frame-options.
 
+## How to build
+
+        ```        
+        python build.py
+        end
+
+
 Sorry if I make mistakes in my basic English.
